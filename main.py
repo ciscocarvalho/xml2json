@@ -17,7 +17,7 @@ def convert_and_write(xml_filepath, json_filepath):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="xml to json converter")
+    parser = argparse.ArgumentParser(description="xml to json converter", prog="xml2json")
     parser.add_argument("-i", "--input-file", help="Input file to be used", required=True)
     parser.add_argument("-o", "--output-file", help="Output file to be used", required=True)
     args = vars(parser.parse_args())
